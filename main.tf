@@ -4,6 +4,6 @@ resource "aws_instance" "public_instance" {
  subnet_id     = "subnet-0d8c52cc1bea2e510"
 
  tags = {
-   Name = var.name_tag,
+   Name = "${var.prefix}-${var.environment}-asg-instance",
  }
 }

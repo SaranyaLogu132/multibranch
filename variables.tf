@@ -34,3 +34,16 @@ variable "name_tag" {
    description = "Name of the EC2 instance"
    default     = "ls-tf-ec2"
 }
+
+
+variable "environment" {
+  description = "Environment name"
+  type        = string
+  default     = "dev"
+}
+
+variable "prefix" {
+  description = "Resource name prefix"
+  type        = string
+  default     = "ls-tf"
+}
